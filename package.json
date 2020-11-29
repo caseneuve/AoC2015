@@ -1,0 +1,26 @@
+{
+  "name": "aoc2020",
+  "version": "1.0.0",
+  "description": "AoC 2020 solutions in JS",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "in": "node main.js in",
+    "out": "node main.js out"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "got": "^11.8.0",
+    "jest": "^26.6.3"
+  },
+  "author": "Piotr Kaznowski",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/pkaznowski/aoc-2020-js"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/pkaznowski/aoc-2020-js/issues"
+  },
+  "homepage": "https://gitlab.com/pkaznowski/aoc-2020-js"
+}
