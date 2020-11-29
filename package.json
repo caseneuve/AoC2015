@@ -4,7 +4,7 @@
   "description": "AoC 2020 solutions in JS",
   "main": "main.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --testPathIgnorePatterns=template",
     "in": "node main.js in",
     "out": "node main.js out"
   },
