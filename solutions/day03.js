@@ -2,7 +2,7 @@ const up = ([x, y]) => { return [x - 1, y] };
 const down = ([x, y]) => { return [x + 1, y] };
 const left = ([x, y]) => { return [x, y - 1] };
 const right = ([x, y]) => { return [x, y + 1] };
-const navigation = { "^": up, v: down, "<": left, ">": right };
+const navigation = { "^": up, "v": down, "<": left, ">": right };
 
 const part1 = (input) => {
   const directions = input.split("");
