@@ -38,6 +38,7 @@ const main = () => {
       break;
     case "out":
       printSolutions(day, year, partNum);
+      break;
     default:
       console.error("Args should be [in|out] [day] [part]");
   }
