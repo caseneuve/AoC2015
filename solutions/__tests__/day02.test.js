@@ -1,6 +1,6 @@
 const [part1, part2] = require("../day02");
 
-describe("day 2", () => {
+describe("day 02", () => {
   describe("part 1", () => {
     it.each([
       ["2x3x4", 58],

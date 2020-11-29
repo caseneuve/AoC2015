@@ -35,7 +35,9 @@ is not a valid number in range 1..25) will default to `1`.
 
 ## Running tests
 
-Run `npm run tests`
+Run `npm test`. To run only new (i.e. not commited) tests, add
+`-- -o`; to run only some tests use `-- -t <string>` to be matched
+(e.g. "02" to run only tests for day 2).
 
 ## Running solution
 
