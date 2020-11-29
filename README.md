@@ -1,5 +1,5 @@
 [Advent of Code](https://adventofcode.com/) solutions in JavaScript
-for 2020.
+for 2020 (but may be used as a JS AoC framework in general).
 
 # Installation & configuration
 
