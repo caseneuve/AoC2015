@@ -1,9 +1,7 @@
+const h = require("../tools/helpers")
+
 const part1 = (input) => {
-  return [...input]
-    .map((c) => (c == "(" ? 1 : -1))
-    .reduce((a, b) => {
-      return a + b;
-    });
+  return [...input].map((c) => (c == "(" ? 1 : -1)).reduce(h.add);
 };
 
 const part2 = (input) => {
@@ -11,9 +9,7 @@ const part2 = (input) => {
   for (let i = 0; i < input.length; i++) {
     let c = input.charAt(i) == "(" ? 1 : -1;
     floor += c;
-    if (floor < 0) {
-      return i + 1;
-    }
+    if (floor < 0) { return i + 1; }
   }
 };
 

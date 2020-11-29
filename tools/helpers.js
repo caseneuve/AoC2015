@@ -7,18 +7,9 @@ exports.onlyNums = (s) => {
 };
 
 // Basic arithetic operations and comparisons
-const _sub = (a, b) => {
-  return a - b;
-};
-
-exports.add = (a, b) => {
-  return a + b;
-};
+const _sub = (a, b) => a - b;
+exports.add = (a, b) => a + b;
 exports.sub = _sub;
-exports.mul = (a, b) => {
-  return a * b;
-};
+exports.mul = (a, b) => a * b;
 exports.lt = _sub;
-exports.gt = (a, b) => {
-  return b - a;
-};
+exports.gt = (a, b) => b - a;
