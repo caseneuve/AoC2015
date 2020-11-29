@@ -1,8 +1,8 @@
 // Parsing input
 exports.onlyNums = (s) => {
   return s
-    .trim()
     .split(/\n/)
+    .filter((l) => l.length !== 0)
     .map((l) => l.split(/\D/).map((n) => parseInt(n, 10)));
 };
 
