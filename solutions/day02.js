@@ -1,7 +1,7 @@
 const h = require("../tools/helpers");
 
 const part1 = (input) => {
-  let dimensions = h.onlyNums(input);
+  let dimensions = h.asArrayNums(input);
 
   const area = (dims) => {
     dims.sort(h.sub);
@@ -14,7 +14,7 @@ const part1 = (input) => {
 };
 
 const part2 = (input) => {
-  let dimensions = h.onlyNums(input);
+  let dimensions = h.asArrayNums(input);
 
   const ribbon = (dims) => {
     dims.sort(h.sub);
