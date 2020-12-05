@@ -1,4 +1,5 @@
 // This is a template
+const h = require("../tools/helpers");
 
 const part1 = (input) => {
   return;
