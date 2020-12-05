@@ -1,7 +1,7 @@
-const [part1, ] = require("../day04");
+const [part1] = require("../day04");
 
 describe("day 04", () => {
-  describe.skip("part 1", () => {
+  describe("part 1", () => {
     it.each([
       ["abcdef", 609043],
       ["pqrstuv", 1048970],
