@@ -43,12 +43,12 @@ const ss = (ii, b = null, gt = "a") => {
 
   while (qu.length) {
     let gg = qu.shift();
-    let ob = ww[gg];
-    if (ob.vv) continue;
-    ob.nn.forEach((e) => (ww[e].vv != null ? ob.nn.delete(e) : e));
-    if (ob.nn.size == 0) ob.update(ww);
+    if (ww[gg].vv) continue;
+    ww[gg].nn.forEach((e) => (ww[e].vv != null ? ww[gg].nn.delete(e) : e));
+    if (ww[gg].nn.size == 0) ww[gg].update(ww);
     else qu.push(gg);
   }
+
   return ww[gt].vv;
 };
 
