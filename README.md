@@ -55,3 +55,4 @@ solutions will be run.
 5. [Day 5](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day05.js)
 6. [Day 6](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day06.js)
 7. [Day 7](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day07.js)
+8. [Day 8](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day08.js)
