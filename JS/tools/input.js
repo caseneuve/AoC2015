@@ -20,7 +20,7 @@ const makeUrl = (day, year) => {
 };
 
 const inputDirPath = () => {
-  return path.join(process.cwd(), "/JS/input");
+  return path.join(process.cwd(), "input");
 };
 
 const inputFilePath = (day) => {
