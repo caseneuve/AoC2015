@@ -1,9 +1,8 @@
-[Advent of Code](https://adventofcode.com/) solutions in JavaScript
-for 2015 (but may be used as a JS AoC framework in general).
+[Advent of Code](https://adventofcode.com/) solutions for 2015 in:
+ - JavaScript
+ - Clojure
 
-# Installation & configuration
-
-In the project root, run `npm i .`
+# Common configuration
 
 Create `.env` file with contents:
 
@@ -15,6 +14,12 @@ headers for e.g. puzzle input page if you're logged into your AoC
 account).
 
 `YEAR` is optional -- if not specified, current year will be used.
+
+# JavaScript
+
+## Installation
+
+In the project root, run `npm i .`
 
 ## Solutions and tests
 
@@ -46,13 +51,26 @@ Run `npm run out DAY PART`, where both arguments are optional: if
 day is not in range 1..25 -- to `1`; if `PART` is not `1` or `2`, both
 solutions will be run.
 
+# Clojure (via babashka)
+
+## Installation & configuration 
+
+Configuration is stored in `bb.edn`.
+
+To install dependencies, just run `bb` command.
+
+To see available tasks, run `bb tasks`.
+
+
 # Solutions
 
-1. [Day 1](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day01.js)
-2. [Day 2](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day02.js)
-3. [Day 3](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day03.js)
-4. [Day 4](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day04.js)
-5. [Day 5](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day05.js)
-6. [Day 6](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day06.js)
-7. [Day 7](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day07.js)
-8. [Day 8](https://gitlab.com/pkaznowski/aoc-2015-js/-/blob/master/solutions/day08.js)
+Day | JS | Clojure 
+--:|---|--- 
+1 | [[x]](JS/solutions/day01.js) | [ ] 
+2 | [[x]](JS/solutions/day02.js) | [ ] 
+3 | [[x]](JS/solutions/day03.js) | [ ]
+4 | [[x]](JS/solutions/day04.js) | [ ]
+5 | [[x]](JS/solutions/day05.js) | [ ]
+6 | [[x]](JS/solutions/day06.js) | [ ]
+7 | [[x]](JS/solutions/day07.js) | [ ]
+8 | [[x]](JS/solutions/day08.js) | [ ]
