@@ -1,4 +1,4 @@
-{:paths ["Clojure"]
+{:paths ["input" "Clojure"]
  :deps {org.clojure/math.combinatorics {:mvn/version "0.1.6"}}
  :tasks
  {:requires ([babashka.curl :as curl]

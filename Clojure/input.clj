@@ -1,7 +1,7 @@
 (ns input
   (:require [clojure.string :refer [split-lines trim]]))
 
-(defn f->str [day] (->> day (str "../input/") slurp trim))
+(defn f->str [day] (->> day (str "input/") slurp trim))
 (defn f->lines [day] (->> day f->str split-lines))
 (defn lines [s] (split-lines s))
 (defn nums [s] (->> s (re-seq #"-?\d+") (mapv parse-long)))
