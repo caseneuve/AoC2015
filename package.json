@@ -1,7 +1,7 @@
 {
-  "name": "aoc2020",
+  "name": "aoc2015",
   "version": "1.0.0",
-  "description": "AoC 2020 solutions in JS",
+  "description": "AoC 2015 solutions in JS",
   "main": "main.js",
   "scripts": {
     "test": "jest --testPathIgnorePatterns=template",
@@ -18,10 +18,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/pkaznowski/aoc-2020-js"
+    "url": "git+https://gitlab.com/pkaznowski/aoc-2015-js"
   },
   "bugs": {
-    "url": "https://gitlab.com/pkaznowski/aoc-2020-js/issues"
+    "url": "https://gitlab.com/pkaznowski/aoc-2015-js/issues"
   },
-  "homepage": "https://gitlab.com/pkaznowski/aoc-2020-js"
+  "homepage": "https://gitlab.com/pkaznowski/aoc-2015-js"
 }
