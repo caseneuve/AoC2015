@@ -20,7 +20,7 @@ const makeUrl = (day, year) => {
 };
 
 const inputDirPath = () => {
-  return path.join(process.cwd(), "input");
+  return path.join(process.cwd(), "/JS/input");
 };
 
 const inputFilePath = (day) => {
@@ -71,4 +71,3 @@ const readInputFile = (day) => {
 };
 
 module.exports = [getDayAndYear, fetchInput, readInputFile];
-

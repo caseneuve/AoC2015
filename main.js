@@ -1,10 +1,10 @@
 const fs = require("fs");
-const [getDayAndYear, fetchInput, readInputFile] = require("./tools/input");
+const [getDayAndYear, fetchInput, readInputFile] = require("./JS/tools/input");
 const dotenv = require("dotenv");
 
 const requireSolutions = (num) => {
   const day = num < 10 ? `0${num}` : num;
-  const modulePath = `./solutions/day${day}.js`;
+  const modulePath = `./JS/solutions/day${day}.js`;
   if (fs.existsSync(modulePath)) {
     return require(modulePath);
   }
