@@ -1,8 +1,8 @@
-[Advent of Code](https://adventofcode.com/) solutions for 2015 in:
+# [Advent of Code](https://adventofcode.com/) solutions for 2015 in:
  - JavaScript
  - Clojure
 
-# Common configuration
+## Common configuration
 
 Create `.env` file with contents:
 
@@ -15,13 +15,13 @@ account).
 
 `YEAR` is optional -- if not specified, current year will be used.
 
-# JavaScript
+## JavaScript
 
-## Installation
+### Installation
 
 In the project root, run `npm i .`
 
-## Solutions and tests
+### Solutions and tests
 
 There are template files in `solutions` directory for one day
 solutions and tests. Copy them adjusting numbers and filling the code.
@@ -31,14 +31,14 @@ solutions and tests. Copy them adjusting numbers and filling the code.
     └── __tests__
         └── day00.test.js
 
-## Commands
+### Commands
 
-### Fetching input
+#### Fetching input
 
 Run `npm run in DAY`, where `DAY` is optional: if is not specified (or
 is not a valid number in range 1..25) will default to `1`.
 
-### Running tests
+#### Running tests
 
 Run `npm test`. To run only new (i.e. not commited) tests, add
 `-- -o`; to run only some tests use `-- -t <string>` to be matched
@@ -51,9 +51,9 @@ Run `npm run out DAY PART`, where both arguments are optional: if
 day is not in range 1..25 -- to `1`; if `PART` is not `1` or `2`, both
 solutions will be run.
 
-# Clojure (via babashka)
+## Clojure (via babashka)
 
-## Installation & configuration 
+### Installation & configuration 
 
 Configuration is stored in `bb.edn`.
 
@@ -62,7 +62,7 @@ To install dependencies, just run `bb` command.
 To see available tasks, run `bb tasks`.
 
 
-# Solutions
+## Solutions
 
 Day | JS | Clojure 
 --:|---|--- 
