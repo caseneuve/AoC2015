@@ -6,7 +6,9 @@
 (def iol? #(some iol %))
 
 (def abc?
-  #(reduce (fn [r [a b c]] (if (= (inc a) b (dec c)) (reduced true) r)) false (partition 3 1 %)))
+  #(reduce
+    (fn [r [a b c]] (if (= (inc a) b (dec c)) (reduced true) r))
+    false (partition 3 1 %)))
 
 (def pairs?
   #(> (count (set (keep (fn [[a b]] (when (= a b) a)) (partition 2 1 %)))) 1))
@@ -14,12 +16,14 @@
 (def int->s #(->> % (map char) (apply str)))
 
 (defn increment [it]
-  (reduce (fn [v i] (if (= (v i) 122) (assoc v i 97) (reduced (update v i inc))))
-          it (range 7 -1 -1)))
+  (reduce
+   (fn [v i] (if (= (v i) 122) (assoc v i 97) (reduced (update v i inc))))
+   it (range 7 -1 -1)))
 
 (defn skip [it]
   (reduce
-   (fn [[t? p] i] (cond t? [t? (assoc p i 97)] (contains? iol (p i)) [:t (update p i inc)] :else [t? p]))
+   (fn [[t? p] i]
+     (cond t? [t? (assoc p i 97)], (contains? iol (p i)) [:t (update p i inc)], :else [t? p]))
    [nil it] (range 8)))
 
 (defn password [it]
