@@ -1,19 +1,16 @@
 (ns day11
   (:require [input :refer [f->str]]))
 
-(def iol (set (map int "iol")))
-
+(def s->int #(mapv int %))
+(def int->s #(->> % (map char) (apply str)))
+(def iol (set (s->int "iol")))
 (def iol? #(some iol %))
-
 (def abc?
   #(reduce
     (fn [r [a b c]] (if (= (inc a) b (dec c)) (reduced true) r))
     false (partition 3 1 %)))
-
 (def pairs?
   #(> (count (set (keep (fn [[a b]] (when (= a b) a)) (partition 2 1 %)))) 1))
-
-(def int->s #(->> % (map char) (apply str)))
 
 ;; heristics: a == 97, z == 122, lenght of the password == 8
 
@@ -33,11 +30,11 @@
   (loop [p it] (if ((every-pred pairs? abc?) p) p, (recur ((if (iol? p) skip increment) p)))))
 
 (defn -main [day]
-  (let [p1 (->> day f->str (mapv int) password)]
+  (let [p1 (->> day f->str s->int password)]
     {:part1 (int->s p1) :part2 (->> p1 increment password int->s)}))
 
 
 (comment
   (let [test-input [["abcdefgh" "abcdffaa"] ["ghijklmn" "ghjaabcc"]]]
-    (for [[i e] test-input] (= e (->> i (mapv int) password int->s))))
+    (for [[i e] test-input] (= e (->> i s->int password int->s))))
   )
