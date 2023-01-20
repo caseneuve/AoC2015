@@ -23,16 +23,14 @@
    it (range 7 -1 -1)))
 
 (defn skip [it]
-  (reduce
-   (fn [[t? p] i]
-     (cond t? [t? (assoc p i 97)], (contains? iol (p i)) [:t (update p i inc)], :else [t? p]))
-   [nil it] (range 8)))
+  (second
+   (reduce
+    (fn [[t? p] i]
+      (cond t? [t? (assoc p i 97)], (contains? iol (p i)) [:t (update p i inc)], :else [t? p]))
+    [nil it] (range 8))))
 
 (defn password [it]
-  (loop [p it]
-    (cond ((every-pred pairs? abc?) p) p
-          (iol? p) (recur (second (skip p)))
-          :else (recur (increment p)))))
+  (loop [p it] (if ((every-pred pairs? abc?) p) p, (recur ((if (iol? p) skip increment) p)))))
 
 (defn -main [day]
   (let [p1 (->> day f->str (mapv int) password)]
