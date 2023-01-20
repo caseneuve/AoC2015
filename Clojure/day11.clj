@@ -15,6 +15,8 @@
 
 (def int->s #(->> % (map char) (apply str)))
 
+;; heristics: a == 97, z == 122, lenght of the password == 8
+
 (defn increment [it]
   (reduce
    (fn [v i] (if (= (v i) 122) (assoc v i 97) (reduced (update v i inc))))
