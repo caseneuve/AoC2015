@@ -66,12 +66,14 @@ To see available tasks, run `bb tasks`.
 
 Day | JS | Clojure 
 --:|---|--- 
-1 | [[x]](JS/solutions/day01.js) | [ ] 
-2 | [[x]](JS/solutions/day02.js) | [ ] 
-3 | [[x]](JS/solutions/day03.js) | [ ]
-4 | [[x]](JS/solutions/day04.js) | [ ]
-5 | [[x]](JS/solutions/day05.js) | [ ]
-6 | [[x]](JS/solutions/day06.js) | [ ]
-7 | [[x]](JS/solutions/day07.js) | [ ]
-8 | [[x]](JS/solutions/day08.js) | [ ]
-9 | [ ] | [[x]](Clojure/day09.clj)
+ 1 | [[x]](JS/solutions/day01.js) | [ ] 
+ 2 | [[x]](JS/solutions/day02.js) | [ ] 
+ 3 | [[x]](JS/solutions/day03.js) | [ ]
+ 4 | [[x]](JS/solutions/day04.js) | [ ]
+ 5 | [[x]](JS/solutions/day05.js) | [ ]
+ 6 | [[x]](JS/solutions/day06.js) | [ ]
+ 7 | [[x]](JS/solutions/day07.js) | [ ]
+ 8 | [[x]](JS/solutions/day08.js) | [ ]
+ 9 | [ ] | [[x]](Clojure/day09.clj)
+10 | [ ] | [x]
+11 | [ ] | [[x]](Clojure/day11.clj)
