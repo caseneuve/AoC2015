@@ -1,6 +1,8 @@
 (ns day10
   (:require [input :refer [f->str]]))
 
+;; Prepare for a 20 sec. run...
+
 (defn -main [day]
   (let [it (->> day f->str (re-seq #"\d") (map parse-long))]
     (loop [it it, new [], s {:r 0}]
