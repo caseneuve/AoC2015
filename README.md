@@ -77,3 +77,4 @@ Day | JS | Clojure
  9 | [ ] | [[x]](Clojure/day09.clj) | []
 10 | [ ] | [[x]](Clojure/day10.clj) | []
 11 | [ ] | [[x]](Clojure/day11.clj) | []
+12 | [ ] | [[x]](Clojure/day12.clj) | []
