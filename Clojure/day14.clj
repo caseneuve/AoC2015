@@ -12,14 +12,11 @@
     [n (if (> s mov) (* (inc q) spd mov) (+ (* q spd mov) (* s spd)))]))
 
 (defn scores [deers time]
-  (->> (range 1 (inc time))
-       (map (partial distance deers))
-       (reduce
-        (fn [sx dx]
-          (let [mx (apply max (map second dx)), wx (keep #(when (= mx (second %)) (first %)) dx)]
-            (reduce #(update %1 %2 inc) sx wx)))
-        (zipmap (map first deers) (repeat 0)))
-       vals (apply max)))
+  (loop [t 1, s (zipmap (map first deers) (repeat 0))]
+    (if (> t time) (apply max (vals s))
+        (let [d (distance deers t), m (apply max (map second d))]
+          (recur (inc t)
+                 (reduce #(update %1 %2 inc) s (keep #(when (= m (second %)) (first %)) d)))))))
 
 (defn -main [day]
   (let [input [(->> day f->str parse) 2503]]
