@@ -8,10 +8,8 @@
        (map (fn [[n & r]] (cons n (map parse-long r))))))
 
 (defn distance [deers sec]
-  (for [[n spd mov res] deers]
-    (let [[q s] (apply (juxt quot rem) [sec (+ mov res)])
-          d (if (> s mov) (* (inc q) spd mov) (+ (* q spd mov) (* s spd)))]
-      [n d])))
+  (for [[n spd mov res] deers :let [[q s] (apply (juxt quot rem) [sec (+ mov res)])]]
+    [n (if (> s mov) (* (inc q) spd mov) (+ (* q spd mov) (* s spd)))]))
 
 (defn scores [deers time]
   (->> (range 1 (inc time))
