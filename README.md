@@ -83,3 +83,4 @@ Day | JS | Clojure
 15 | [ ] | [[x]](Clojure/day15.clj) 
 16 | [ ] | [[x]](Clojure/day16.clj) 
 17 | [ ] | [[x]](Clojure/day17.clj) 
+18 | [ ] | [[x]](Clojure/day18.clj) 
