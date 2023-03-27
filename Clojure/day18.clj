@@ -9,16 +9,17 @@
         [[0 0] {}])
        second))
 
-(defn adjacent [grid [x y]]
-  (frequencies
-   (for [yy [(dec y) y (inc y)], xx [(dec x) x (inc x)] :when (not= [x y] [xx yy])]
-     (grid [xx yy]))))
+(defn adjacent-on [grid [x y]]
+  (->
+   (for [yy [(dec y) y (inc y)], xx [(dec x) x (inc x)] :when (not= [x y] [xx yy])] (grid [xx yy]))
+   frequencies
+   (get \# 0)))
 
 (defn step [grid xy part]
   (reduce
    (fn [new pos]
-     (let [c (grid pos), a (adjacent grid pos), on (a \# 0)]
-       (if (and (= part 2) (contains? #{[0 0] [xy 0] [xy xy] [0 xy]} pos)) (assoc new pos \#)
+     (if (and (= part 2) (contains? #{[0 0] [xy 0] [xy xy] [0 xy]} pos)) (assoc new pos \#)
+         (let [c (grid pos), on (adjacent-on grid pos)]
            (case c
              \. (cond-> new (= on 3) (assoc pos \#))
              \# (cond-> new (or (< on 2) (> on 3)) (assoc pos \.))))))
