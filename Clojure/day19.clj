@@ -17,7 +17,7 @@
              (inc n)
              (cond-> a (= c st) (into (for [r rs] (apply str (concat h r (drop cm t))))))))))))
 
-;; part 2, a brute solution (should be refactored to with analysis of common patterns in the input
+;; part 2, a brute solution (should be refactored by using analysis of the common patterns in the input
 ;; -- leaving for later :))
 
 (defn parse2 [it]
