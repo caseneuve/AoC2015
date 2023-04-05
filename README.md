@@ -64,23 +64,24 @@ To see available tasks, run `bb tasks`.
 
 ## Solutions
 
-Day | JS | Clojure 
---:|---|--- 
- 1 | [[x]](JS/solutions/day01.js) | [ ] 
- 2 | [[x]](JS/solutions/day02.js) | [ ] 
- 3 | [[x]](JS/solutions/day03.js) | [ ]
- 4 | [[x]](JS/solutions/day04.js) | [ ]
- 5 | [[x]](JS/solutions/day05.js) | [ ]
- 6 | [[x]](JS/solutions/day06.js) | [ ]
- 7 | [[x]](JS/solutions/day07.js) | [ ]
- 8 | [[x]](JS/solutions/day08.js) | [ ]
- 9 | [ ] | [[x]](Clojure/day09.clj) 
-10 | [ ] | [[x]](Clojure/day10.clj) 
-11 | [ ] | [[x]](Clojure/day11.clj) 
-12 | [ ] | [[x]](Clojure/day12.clj) 
-13 | [ ] | [[x]](Clojure/day13.clj) 
-14 | [ ] | [[x]](Clojure/day14.clj) 
-15 | [ ] | [[x]](Clojure/day15.clj) 
-16 | [ ] | [[x]](Clojure/day16.clj) 
-17 | [ ] | [[x]](Clojure/day17.clj) 
-18 | [ ] | [[x]](Clojure/day18.clj) 
+Day | JS | Clojure | notes
+--:|---|---|--- 
+ 1 | [[x]](JS/solutions/day01.js) | [ ] |
+ 2 | [[x]](JS/solutions/day02.js) | [ ] | 
+ 3 | [[x]](JS/solutions/day03.js) | [ ] |
+ 4 | [[x]](JS/solutions/day04.js) | [ ] |
+ 5 | [[x]](JS/solutions/day05.js) | [ ] |
+ 6 | [[x]](JS/solutions/day06.js) | [ ] |
+ 7 | [[x]](JS/solutions/day07.js) | [ ] |
+ 8 | [[x]](JS/solutions/day08.js) | [ ] |
+ 9 | [ ] | [[x]](Clojure/day09.clj) | 
+10 | [ ] | [[x]](Clojure/day10.clj) | 
+11 | [ ] | [[x]](Clojure/day11.clj) | 
+12 | [ ] | [[x]](Clojure/day12.clj) | 
+13 | [ ] | [[x]](Clojure/day13.clj) | 
+14 | [ ] | [[x]](Clojure/day14.clj) | 
+15 | [ ] | [[x]](Clojure/day15.clj) | 
+16 | [ ] | [[x]](Clojure/day16.clj) | 
+17 | [ ] | [[x]](Clojure/day17.clj) | 
+18 | [ ] | [[x]](Clojure/day18.clj) | 
+19 | [ ] | [[x]](Clojure/day19.clj) | needs refactoring
