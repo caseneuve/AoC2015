@@ -84,4 +84,5 @@ Day | JS | Clojure | notes
 16 | [ ] | [[x]](Clojure/day16.clj) | 
 17 | [ ] | [[x]](Clojure/day17.clj) | 
 18 | [ ] | [[x]](Clojure/day18.clj) | 
-19 | [ ] | [[x]](Clojure/day19.clj) | needs refactoring
+19 | [ ] | [[x]](Clojure/day19.clj) | todo: refactor
+20 | [ ] | [[x]](Clojure/day20.clj) |
